@@ -40,10 +40,11 @@ jobs:
             exit 1
           fi
 
+      # vscode.dev refuses github.com/raw images (a 302 with no CORP header), raw.githubusercontent.com serves them.
       - name: Package VSIX
         run: |
           VSIX_NAME="microbit-themes-${GITHUB_REF_NAME:-v$(node -p "require('./package.json').version")}.vsix"
-          npx --yes @vscode/vsce package --out "$VSIX_NAME"
+          npx --yes @vscode/vsce package --out "$VSIX_NAME" --baseImagesUrl https://raw.githubusercontent.com/carlosperate/vscode-microbit-themes/HEAD/
           echo "VSIX_NAME=$VSIX_NAME" >> "$GITHUB_ENV"
 
       - name: Upload VSIX to release

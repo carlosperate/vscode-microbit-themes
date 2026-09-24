@@ -33,8 +33,9 @@ jobs:
       - name: Validate manifest (vsce ls)
         run: vsce ls
 
+      # The same image base as publish.yml, so this artifact is the VSIX a release would ship.
       - name: Package extension
-        run: vsce package
+        run: vsce package --baseImagesUrl https://raw.githubusercontent.com/carlosperate/vscode-microbit-themes/HEAD/
 
       - name: Upload .vsix artifact
         uses: actions/upload-artifact@v7

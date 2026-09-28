@@ -8,6 +8,7 @@ const bgPanel = "#efe9f7";
 const bgRaised = "#e6ddf2";
 const bgHover = "#e6dcf2";
 const bgSelected = "#ddd0ed";
+const bgButtonHover = "#d1c0e6";
 const bgInactiveTab = "#dccfee";
 const bgMinimap = "#f1ebf9";
 
@@ -24,6 +25,7 @@ const guide = "#e0d4ee";
 
 // Family accents
 const purple = "#6c4bc1";
+const purpleHover = "#5c3ea8";
 const teal = "#7bcdc2";
 const tealDeep = "#3aa195";
 const tealText = "#2a8a82";
@@ -140,6 +142,7 @@ const theme: Theme = {
     "statusBar.border": tealDeep,
     "statusBar.noFolderBackground": tealDeep,
     "statusBar.debuggingBackground": purple,
+    "statusBar.debuggingForeground": white,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": alpha(black, 0.13),
     "statusBarItem.remoteForeground": white,
@@ -187,7 +190,10 @@ const theme: Theme = {
     "dropdown.border": border,
     "button.background": purple,
     "button.foreground": white,
-    "button.hoverBackground": alpha(purple, 0.8),
+    "button.hoverBackground": purpleHover,
+    "button.secondaryBackground": bgSelected,
+    "button.secondaryForeground": fgStrong,
+    "button.secondaryHoverBackground": bgButtonHover,
     "badge.background": purple,
     "badge.foreground": white,
     "notificationCenter.border": border,

@@ -8,6 +8,7 @@ const bgPanel = "#fcefe4";
 const bgRaised = "#f3e1d4";
 const bgHover = "#f8e1cf";
 const bgSelected = "#f5d8c2";
+const bgButtonHover = "#eccab1";
 const bgInactiveTab = "#ead4c4";
 const bgMinimap = "#f7ece1";
 
@@ -25,6 +26,7 @@ const guide = "#ead4c4";
 
 // Family accents
 const red = "#cd0365";
+const redHover = "#b00257";
 const orange = "#e7645c";
 
 // Token-only colours
@@ -140,6 +142,7 @@ const theme: Theme = {
     "statusBar.border": orange,
     "statusBar.noFolderBackground": orange,
     "statusBar.debuggingBackground": red,
+    "statusBar.debuggingForeground": white,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": alpha(black, 0.13),
     "statusBarItem.remoteForeground": white,
@@ -187,7 +190,10 @@ const theme: Theme = {
     "dropdown.border": border,
     "button.background": red,
     "button.foreground": white,
-    "button.hoverBackground": alpha(red, 0.8),
+    "button.hoverBackground": redHover,
+    "button.secondaryBackground": bgSelected,
+    "button.secondaryForeground": fgStrong,
+    "button.secondaryHoverBackground": bgButtonHover,
     "badge.background": red,
     "badge.foreground": white,
     "notificationCenter.border": border,

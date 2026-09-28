@@ -8,6 +8,8 @@ const bgPanel = "#0d1714";
 const bgRaised = "#0a120e";
 const bgHover = "#152620";
 const bgSelected = "#1d3326";
+const bgButton = "#22392c";
+const bgButtonHover = "#2b4737";
 
 // Text
 const fg = "#d6e0d8";
@@ -19,6 +21,8 @@ const fgComment = "#5a6e60";
 const fgFaint = "#3e4d44";
 const fgPunct = "#6a7b6f";
 const fgOperator = "#8aa395";
+// White is about 2:1 on the pastel accents, so filled controls take dark text.
+const fgOnAccent = bgRaised;
 
 // Borders / guides
 const border = "#1d2622";
@@ -99,12 +103,12 @@ const theme: Theme = {
     "titleBar.border": border,
     "activityBar.background": activityBg,
     "activityBar.foreground": green,
-    "activityBar.inactiveForeground": alpha(green, 0.5),
+    "activityBar.inactiveForeground": alpha(green, 0.6),
     "activityBar.activeBorder": green,
     "activityBar.activeBackground": transparent,
     "activityBar.border": activityBg,
     "activityBarBadge.background": lightPink,
-    "activityBarBadge.foreground": white,
+    "activityBarBadge.foreground": fgOnAccent,
     "sideBar.background": bgPanel,
     "sideBar.foreground": fgList,
     "sideBar.border": border,
@@ -131,7 +135,7 @@ const theme: Theme = {
     "tab.activeBorderTop": green,
     "tab.activeBorder": bg,
     "tab.inactiveBackground": bgRaised,
-    "tab.inactiveForeground": fgPunct,
+    "tab.inactiveForeground": fgMuted,
     "tab.hoverBackground": bgHover,
     "tab.border": border,
     "tab.unfocusedActiveBorderTop": guide,
@@ -145,6 +149,7 @@ const theme: Theme = {
     "statusBar.border": blueStatus,
     "statusBar.noFolderBackground": blueStatus,
     "statusBar.debuggingBackground": green,
+    "statusBar.debuggingForeground": fgOnAccent,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": "#00000022",
     "statusBarItem.remoteForeground": blueStatusFg,
@@ -191,10 +196,13 @@ const theme: Theme = {
     "dropdown.foreground": fg,
     "dropdown.border": border,
     "button.background": green,
-    "button.foreground": white,
+    "button.foreground": fgOnAccent,
     "button.hoverBackground": alpha(green, 0.8),
+    "button.secondaryBackground": bgButton,
+    "button.secondaryForeground": fgStrong,
+    "button.secondaryHoverBackground": bgButtonHover,
     "badge.background": green,
-    "badge.foreground": white,
+    "badge.foreground": fgOnAccent,
     "notificationCenter.border": border,
     "notifications.background": bgPanel,
     "notifications.foreground": fgList,

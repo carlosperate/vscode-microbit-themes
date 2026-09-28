@@ -8,6 +8,7 @@ const bgPanel = "#eef1ea";
 const bgRaised = "#e6ebe1";
 const bgHover = "#e0e6d8";
 const bgSelected = "#d6dfce";
+const bgButtonHover = "#c8d3be";
 const bgInactiveTab = "#dde3d6";
 const bgMinimap = "#f0f3eb";
 
@@ -25,6 +26,9 @@ const guide = "#e2e6db";
 
 // Family accents
 const green = "#00a000";
+// White text is 3.5:1 on `green`, so filled controls and links take a deeper one.
+const greenDeep = "#007f00";
+const greenHover = "#006b00";
 const blue = "#2a94d6";
 
 // Token-only colours
@@ -138,7 +142,8 @@ const theme: Theme = {
     "statusBar.foreground": white,
     "statusBar.border": blue,
     "statusBar.noFolderBackground": blue,
-    "statusBar.debuggingBackground": green,
+    "statusBar.debuggingBackground": greenDeep,
+    "statusBar.debuggingForeground": white,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": alpha(black, 0.13),
     "statusBarItem.remoteForeground": white,
@@ -184,18 +189,21 @@ const theme: Theme = {
     "dropdown.background": bg,
     "dropdown.foreground": fg,
     "dropdown.border": border,
-    "button.background": green,
+    "button.background": greenDeep,
     "button.foreground": white,
-    "button.hoverBackground": alpha(green, 0.8),
-    "badge.background": green,
+    "button.hoverBackground": greenHover,
+    "button.secondaryBackground": bgSelected,
+    "button.secondaryForeground": fgStrong,
+    "button.secondaryHoverBackground": bgButtonHover,
+    "badge.background": greenDeep,
     "badge.foreground": white,
     "notificationCenter.border": border,
     "notifications.background": bgPanel,
     "notifications.foreground": fgStrong,
     "notifications.border": border,
-    "textLink.foreground": green,
-    "textLink.activeForeground": green,
-    "editorLink.activeForeground": green,
+    "textLink.foreground": greenDeep,
+    "textLink.activeForeground": greenDeep,
+    "editorLink.activeForeground": greenDeep,
     "focusBorder": green,
     "contrastBorder": transparent,
     "scrollbar.shadow": alpha(black, 0.13),

@@ -2,6 +2,13 @@
 
 ## v0.2.0 - Unreleased
 
+- Secondary buttons follow each theme's palette instead of VS Code's default grey.
+- Dark themes: dark text on buttons, badges and the debugging status bar (which
+  had white text on pastel backgrounds), brighter inactive activity bar icons,
+  brighter sidebar titles, section headers, breadcrumbs and inactive tabs.
+- Light themes: button hover darkens the button instead of fading it.
+- Pixel Light: a deeper green for buttons, badges and links, so white text and
+  links on light backgrounds are readable.
 - Fix project description images not loading on vscode.dev.
 - More tools for manually testing theme locally.
 

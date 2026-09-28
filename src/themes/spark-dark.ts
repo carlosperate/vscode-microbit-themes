@@ -8,16 +8,20 @@ const bgPanel = "#1a0e0c";
 const bgRaised = "#150a0a";
 const bgHover = "#241413";
 const bgSelected = "#33181a";
+const bgButton = "#3a1f1e";
+const bgButtonHover = "#4a2826";
 
 // Text
 const fg = "#e6d8cc";
 const fgStrong = "#f5e8db";
 const fgList = "#dbc6ba";
 const fgTitle = "#c2a39a";
-const fgMuted = "#8a6e64";
+const fgMuted = "#9a7e73";
 const fgComment = "#7a5e54";
 const fgFaint = "#574238";
 const fgOperator = "#a08577";
+// White is about 2:1 on the pastel accents, so filled controls take dark text.
+const fgOnAccent = bgRaised;
 
 // Borders / guides
 const border = "#2a1d1a";
@@ -96,12 +100,12 @@ const theme: Theme = {
     "titleBar.border": border,
     "activityBar.background": activityBg,
     "activityBar.foreground": pink,
-    "activityBar.inactiveForeground": alpha(pink, 0.5),
+    "activityBar.inactiveForeground": alpha(pink, 0.6),
     "activityBar.activeBorder": pink,
     "activityBar.activeBackground": transparent,
     "activityBar.border": activityBg,
     "activityBarBadge.background": lightBlue,
-    "activityBarBadge.foreground": white,
+    "activityBarBadge.foreground": fgOnAccent,
     "sideBar.background": bgPanel,
     "sideBar.foreground": fgList,
     "sideBar.border": border,
@@ -128,7 +132,7 @@ const theme: Theme = {
     "tab.activeBorderTop": pink,
     "tab.activeBorder": bg,
     "tab.inactiveBackground": bgRaised,
-    "tab.inactiveForeground": "#7a5e54",
+    "tab.inactiveForeground": fgMuted,
     "tab.hoverBackground": bgHover,
     "tab.border": border,
     "tab.unfocusedActiveBorderTop": guide,
@@ -142,6 +146,7 @@ const theme: Theme = {
     "statusBar.border": redStatus,
     "statusBar.noFolderBackground": redStatus,
     "statusBar.debuggingBackground": pink,
+    "statusBar.debuggingForeground": fgOnAccent,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": "#00000022",
     "statusBarItem.remoteForeground": redStatusFg,
@@ -188,10 +193,13 @@ const theme: Theme = {
     "dropdown.foreground": fg,
     "dropdown.border": border,
     "button.background": pink,
-    "button.foreground": white,
+    "button.foreground": fgOnAccent,
     "button.hoverBackground": alpha(pink, 0.8),
+    "button.secondaryBackground": bgButton,
+    "button.secondaryForeground": fgStrong,
+    "button.secondaryHoverBackground": bgButtonHover,
     "badge.background": pink,
-    "badge.foreground": white,
+    "badge.foreground": fgOnAccent,
     "notificationCenter.border": border,
     "notifications.background": bgPanel,
     "notifications.foreground": fgList,

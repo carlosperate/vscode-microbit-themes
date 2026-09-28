@@ -8,17 +8,21 @@ const bgPanel = "#100c1b";
 const bgRaised = "#0c0a14";
 const bgHover = "#181228";
 const bgSelected = "#22183a";
+const bgButton = "#2a2045";
+const bgButtonHover = "#352956";
 
 // Text
 const fg = "#dcd4e6";
 const fgStrong = "#ece4f5";
 const fgList = "#cdc2dc";
-const fgMuted = "#7a6e90";
+const fgMuted = "#8a7da0";
 const fgTitle = "#a89db8";
 const fgComment = "#5d5072";
 const fgFaint = "#4a3f5f";
 const fgPunct = "#6d5c8c";
 const fgOperator = "#8a7da0";
+// White is about 2:1 on the pastel accents, so filled controls take dark text.
+const fgOnAccent = bgRaised;
 
 // Borders / guides
 const border = "#1f1832";
@@ -28,7 +32,7 @@ const guide = "#181228";
 const purple = "#b4a3e8";
 const teal = "#7bcdc2";
 const tealStatus = "#2a7d72";
-const tealStatusFg = "#e6f5f2";
+const tealStatusFg = "#f2fbf9";
 
 // Token-only colours
 const string = "#9ee0d6";
@@ -99,12 +103,12 @@ const theme: Theme = {
     "titleBar.border": border,
     "activityBar.background": "#241a3d",
     "activityBar.foreground": purple,
-    "activityBar.inactiveForeground": alpha(purple, 0.5),
+    "activityBar.inactiveForeground": alpha(purple, 0.6),
     "activityBar.activeBorder": purple,
     "activityBar.activeBackground": transparent,
     "activityBar.border": "#241a3d",
     "activityBarBadge.background": lightOrange,
-    "activityBarBadge.foreground": white,
+    "activityBarBadge.foreground": fgOnAccent,
     "sideBar.background": bgPanel,
     "sideBar.foreground": fgList,
     "sideBar.border": border,
@@ -131,7 +135,7 @@ const theme: Theme = {
     "tab.activeBorderTop": purple,
     "tab.activeBorder": bg,
     "tab.inactiveBackground": bgRaised,
-    "tab.inactiveForeground": fgPunct,
+    "tab.inactiveForeground": fgMuted,
     "tab.hoverBackground": bgHover,
     "tab.border": border,
     "tab.unfocusedActiveBorderTop": guide,
@@ -145,6 +149,7 @@ const theme: Theme = {
     "statusBar.border": tealStatus,
     "statusBar.noFolderBackground": tealStatus,
     "statusBar.debuggingBackground": purple,
+    "statusBar.debuggingForeground": fgOnAccent,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": "#00000022",
     "statusBarItem.remoteForeground": tealStatusFg,
@@ -191,10 +196,13 @@ const theme: Theme = {
     "dropdown.foreground": fg,
     "dropdown.border": border,
     "button.background": purple,
-    "button.foreground": white,
+    "button.foreground": fgOnAccent,
     "button.hoverBackground": alpha(purple, 0.8),
+    "button.secondaryBackground": bgButton,
+    "button.secondaryForeground": fgStrong,
+    "button.secondaryHoverBackground": bgButtonHover,
     "badge.background": purple,
-    "badge.foreground": white,
+    "badge.foreground": fgOnAccent,
     "notificationCenter.border": border,
     "notifications.background": bgPanel,
     "notifications.foreground": fgList,

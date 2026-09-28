@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.2.0 - Unreleased
+## v1.0.0 - 2026/09/28
 
 - Secondary buttons follow each theme's palette instead of VS Code's default grey.
 - Dark themes: dark text on buttons, badges and the debugging status bar (which
@@ -12,7 +12,7 @@
 - Fix project description images not loading on vscode.dev.
 - More tools for manually testing theme locally.
 
-## v0.1.0 - 2026-05-20
+## v0.1.0 - 2026/05/20
 
 - Initial release with six color themes:
   - micro:bit Pixel Light / Dark (Green & Blue chrome)

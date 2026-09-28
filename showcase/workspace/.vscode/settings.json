@@ -1,0 +1,10 @@
+{
+  "chat.disableAIFeatures": true,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.rulers": [80],
+  "editor.guides.bracketPairs": "active",
+  "editor.renderWhitespace": "boundary",
+  "files.exclude": { ".vscode": true }
+}

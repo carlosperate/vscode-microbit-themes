@@ -10,6 +10,8 @@ type Rows = [number, number] | "size";
 
 // Rows kept above and below the change, for context.
 const PAD = 60;
+// Summed channel difference that counts as a change: rounding only, as a subtle tweak moves ~10.
+const NOISE = 3;
 
 const shots = join(import.meta.dirname, "..", ".screenshots");
 const [before, after] = process.argv.slice(2);
@@ -27,7 +29,7 @@ async function changedRows(a: string, b: string): Promise<Rows | null> {
     for (let x = 0; x < width; x++) {
       const i = (y * width + x) * 4;
       const d = Math.abs(A.data[i] - B.data[i]) + Math.abs(A.data[i + 1] - B.data[i + 1]) + Math.abs(A.data[i + 2] - B.data[i + 2]);
-      if (d > 24) moved++;
+      if (d > NOISE) moved++;
     }
     if (moved > 2) {
       if (first < 0) first = y;

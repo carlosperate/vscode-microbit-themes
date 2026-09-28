@@ -26,9 +26,11 @@ const guide = "#e2e6db";
 
 // Family accents
 const green = "#00a000";
-// White text is 3.5:1 on `green`, so filled controls and links take a deeper one.
-const greenDeep = "#007f00";
-const greenHover = "#006b00";
+// White text is 3.5:1 on `green`: fills take the lightest green that reaches 4.5:1,
+// and links a deeper one to clear 4.5:1 on the panel background too.
+const greenFill = "#008a00";
+const greenFillHover = "#007700";
+const greenText = "#007f00";
 const blue = "#2a94d6";
 
 // Token-only colours
@@ -142,7 +144,7 @@ const theme: Theme = {
     "statusBar.foreground": white,
     "statusBar.border": blue,
     "statusBar.noFolderBackground": blue,
-    "statusBar.debuggingBackground": greenDeep,
+    "statusBar.debuggingBackground": greenFill,
     "statusBar.debuggingForeground": white,
     "statusBarItem.hoverBackground": alpha(white, 0.13),
     "statusBarItem.remoteBackground": alpha(black, 0.13),
@@ -189,21 +191,21 @@ const theme: Theme = {
     "dropdown.background": bg,
     "dropdown.foreground": fg,
     "dropdown.border": border,
-    "button.background": greenDeep,
+    "button.background": greenFill,
     "button.foreground": white,
-    "button.hoverBackground": greenHover,
+    "button.hoverBackground": greenFillHover,
     "button.secondaryBackground": bgSelected,
     "button.secondaryForeground": fgStrong,
     "button.secondaryHoverBackground": bgButtonHover,
-    "badge.background": greenDeep,
+    "badge.background": greenFill,
     "badge.foreground": white,
     "notificationCenter.border": border,
     "notifications.background": bgPanel,
     "notifications.foreground": fgStrong,
     "notifications.border": border,
-    "textLink.foreground": greenDeep,
-    "textLink.activeForeground": greenDeep,
-    "editorLink.activeForeground": greenDeep,
+    "textLink.foreground": greenText,
+    "textLink.activeForeground": greenText,
+    "editorLink.activeForeground": greenText,
     "focusBorder": green,
     "contrastBorder": transparent,
     "scrollbar.shadow": alpha(black, 0.13),

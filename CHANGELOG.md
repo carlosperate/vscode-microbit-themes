@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.1 - Unreleased
+
+- Pixel Light: lighter green buttons and badges, still readable with white
+  text.
+
 ## v1.0.0 - 2026/09/28
 
 - Secondary buttons follow each theme's palette instead of VS Code's default grey.

@@ -2,7 +2,7 @@
   "name": "microbit-themes",
   "displayName": "micro:bit Inspired Themes",
   "description": "Six VS Code colour themes, Pixel, Spark, Halo (light and dark) inspired by micro:bit.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "carlosperate",
   "license": "MIT",
   "icon": "icon.png",

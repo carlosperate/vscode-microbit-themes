@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.1 - Unreleased
+## v1.0.1 - 2026/10/02
 
 - Pixel Light: lighter green buttons and badges, still readable with white
   text.

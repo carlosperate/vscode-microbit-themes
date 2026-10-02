@@ -320,6 +320,12 @@ const theme: Theme = {
     { name: "Markdown Italic", scope: ["markup.italic"], settings: { foreground: stringOrange, fontStyle: "italic" } },
     { name: "Markdown Code", scope: ["markup.inline.raw", "markup.fenced_code"], settings: { foreground: blue } },
     { name: "JSON Key", scope: ["support.type.property-name.json"], settings: { foreground: propBlue } },
+    { name: "Log Error", scope: "token.error-token", settings: { foreground: pink } },
+    { name: "Log Warning", scope: "token.warn-token", settings: { foreground: lightOrange } },
+    { name: "Log Info", scope: "token.info-token", settings: { foreground: blue } },
+    { name: "Log Debug", scope: "token.debug-token", settings: { foreground: cyan } },
+    { name: "Inserted", scope: ["markup.inserted"], settings: { foreground: lightGreen } },
+    { name: "Deleted", scope: ["markup.deleted"], settings: { foreground: pink } },
     { name: "Invalid", scope: ["invalid"], settings: { foreground: white, background: red } },
   ],
   semanticTokenColors: {

@@ -12,7 +12,9 @@ export type Theme = {
   colors: Record<string, string>;
   tokenColors: Array<{
     name: string;
-    scope: string[];
+    // A string where VS Code compares one: it adds its own log colours over ours unless a rule's
+    // scope is exactly "token.info-token".
+    scope: string | string[];
     settings: { foreground?: string; background?: string; fontStyle?: string };
   }>;
   semanticTokenColors: Record<string, { foreground?: string; italic?: boolean }>;

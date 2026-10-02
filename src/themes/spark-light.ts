@@ -39,6 +39,8 @@ const warm = "#b85a00";
 
 // Standard / shared semantics
 const green = "#00a000";
+// `green` is 3.4:1 on the background; text takes a deeper one that clears 4.5:1.
+const greenText = "#007f00";
 const blue = "#2a94d6";
 const lightGreen = "#4cd07a";
 const lightOrange = "#f5a070";
@@ -313,6 +315,12 @@ const theme: Theme = {
     { name: "Markdown Italic", scope: ["markup.italic"], settings: { foreground: purple, fontStyle: "italic" } },
     { name: "Markdown Code", scope: ["markup.inline.raw", "markup.fenced_code"], settings: { foreground: warm } },
     { name: "JSON Key", scope: ["support.type.property-name.json"], settings: { foreground: propBrown } },
+    { name: "Log Error", scope: "token.error-token", settings: { foreground: red } },
+    { name: "Log Warning", scope: "token.warn-token", settings: { foreground: warm } },
+    { name: "Log Info", scope: "token.info-token", settings: { foreground: fnBlue } },
+    { name: "Log Debug", scope: "token.debug-token", settings: { foreground: teal } },
+    { name: "Inserted", scope: ["markup.inserted"], settings: { foreground: greenText } },
+    { name: "Deleted", scope: ["markup.deleted"], settings: { foreground: red } },
     { name: "Invalid", scope: ["invalid"], settings: { foreground: white, background: red } },
   ],
   semanticTokenColors: {

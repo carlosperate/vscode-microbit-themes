@@ -512,6 +512,52 @@
       }
     },
     {
+      "name": "Log Error",
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "#cd0365"
+      }
+    },
+    {
+      "name": "Log Warning",
+      "scope": "token.warn-token",
+      "settings": {
+        "foreground": "#b85a00"
+      }
+    },
+    {
+      "name": "Log Info",
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "#1f6e8c"
+      }
+    },
+    {
+      "name": "Log Debug",
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "#6c4bc1"
+      }
+    },
+    {
+      "name": "Inserted",
+      "scope": [
+        "markup.inserted"
+      ],
+      "settings": {
+        "foreground": "#007f00"
+      }
+    },
+    {
+      "name": "Deleted",
+      "scope": [
+        "markup.deleted"
+      ],
+      "settings": {
+        "foreground": "#cd0365"
+      }
+    },
+    {
       "name": "Invalid",
       "scope": [
         "invalid"

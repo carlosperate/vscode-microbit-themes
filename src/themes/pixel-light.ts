@@ -316,6 +316,12 @@ const theme: Theme = {
     { name: "Markdown Italic", scope: ["markup.italic"], settings: { foreground: orangeText, fontStyle: "italic" } },
     { name: "Markdown Code", scope: ["markup.inline.raw", "markup.fenced_code"], settings: { foreground: blue } },
     { name: "JSON Key", scope: ["support.type.property-name.json"], settings: { foreground: fnBlue } },
+    { name: "Log Error", scope: "token.error-token", settings: { foreground: red } },
+    { name: "Log Warning", scope: "token.warn-token", settings: { foreground: warm } },
+    { name: "Log Info", scope: "token.info-token", settings: { foreground: fnBlue } },
+    { name: "Log Debug", scope: "token.debug-token", settings: { foreground: teal } },
+    { name: "Inserted", scope: ["markup.inserted"], settings: { foreground: greenText } },
+    { name: "Deleted", scope: ["markup.deleted"], settings: { foreground: red } },
     { name: "Invalid", scope: ["invalid"], settings: { foreground: white, background: red } },
   ],
   semanticTokenColors: {

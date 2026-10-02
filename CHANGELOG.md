@@ -6,6 +6,8 @@
   text.
 - Fix the active activity bar icon turning dark on the newer VS Code layout,
   which now also marks it and the hovered icon with a rounded background.
+- Coloured log output: errors, warnings, info and debug lines in the Output
+  panel (VS Code's log colours), and added and removed lines in diff files.
 
 ## v1.0.0 - 2026/09/28
 
